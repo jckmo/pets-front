@@ -1,0 +1,86 @@
+$gainsboro: #d8dbe2;
+$lightbluesteel: #a9bcd0;
+$cadetblue: #58a4b0;
+$charcoal: #373f51;
+$raisinblack: #1b1b1e;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $gainsboro;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid black;
+  background-color: $gainsboro;
+  position: fixed;
+  bottom: 0;
+  padding-top: 5px;
+  z-index: +1;
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  background-color: $gainsboro;
+  position: fixed;
+  top: 0;
+  padding-top: 5px;
+  z-index: +1;
+}
+
+#sub-header-left {
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  color: $charcoal;
+}
+
+#sub-header-right {
+  display: flex;
+  width: 30%;
+  color: $charcoal;
+}
+
+#sub-header-right > p {
+  color: $cadetblue;
+  font-weight: 900;
+}
+
+#create-friend {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#sub-create-friend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $lightbluesteel;
+  padding: 10px 30px 10px 30px;
+  width: 30%;
+  flex-wrap: wrap;
+  color: $charcoal
+}
