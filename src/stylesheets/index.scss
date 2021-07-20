@@ -61,26 +61,68 @@ code {
 }
 
 #sub-header-right > p {
-  color: $cadetblue;
+  color: $lightbluesteel;
+
   font-weight: 900;
 }
 
-#create-friend {
+#create-friend, #create-person {
   position: absolute;
   top: 15%;
   width: 100%;
   display: flex;
   justify-content: center;
-  
 }
 
-#sub-create-friend {
+#sub-create-friend, #sub-create-person {
+  background-color: $lightbluesteel;
+  padding: 10px 30px 10px 30px;
+  width: 100%;
+  max-width: 350px;
+  color: $charcoal;
+  border-radius: 7%/12%;
+}
+
+#create-person-form, #create-friend-form {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $lightbluesteel;
-  padding: 10px 30px 10px 30px;
-  width: 30%;
+  height: auto;
   flex-wrap: wrap;
-  color: $charcoal
+  width: 100%;
+}
+
+#create-person-form > input, #create-friend-form > input {
+  margin: 0 50% 0 50%;
+}
+
+#sub-create-person {
+  border-radius: 10%/12%;
+}
+
+#create-person-form > input, #create-person-form > label, #create-friend-form > input, #create-friend-form > label {
+  width: 100%;
+  margin: .75% 0 1% 0;
+}
+
+#create-friend-form > button, #create-person-form > button {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:15px 0 10px 0;
+  border:0.16em solid rgba(255,255,255,0);
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color: $charcoal;
+  background-color: $gainsboro;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  text-align:center;
+  transition: all 0.2s;
+
+}
+
+#sub-create-friend > button:hover, #sub-create-person > button:hover {
+  border-color: rgba(255,255,255,1);
 }
