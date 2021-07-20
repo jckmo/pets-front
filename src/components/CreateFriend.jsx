@@ -5,7 +5,9 @@ class CreateFriend extends React.Component {
     super()
     this.state = {
       friendName: '',
-      friendBirthdate: '',
+      month: '',
+      day: '',
+      year: ''
     }
   }
 
@@ -14,8 +16,14 @@ class CreateFriend extends React.Component {
       case 'friendName':
         this.setState({friendName: e.target.value})
         break;
-      case 'friendBirthdate':
-        this.setState({friendBirthdate: e.target.value})
+      case 'month':
+        this.setState({month: e.target.value})
+        break;
+      case 'day':
+        this.setState({day: e.target.value})
+        break;
+      case 'year':
+        this.setState({year: e.target.value})
         break;
       default:
         break;
@@ -37,8 +45,11 @@ class CreateFriend extends React.Component {
             <label>Friends name</label>
               <input id='friendName' placeholder='Ruby'></input>
             <label>Birthdate</label>
-              <input id='friendBirthdate' placeholder='03/14/2020'></input>
-
+            <div id='birthdate-div'>
+              <input placeholder='Month - 3' type="number" id="month" min="1" max="12" />
+              <input placeholder='Day - 14' type="number" id="day" min="1" max="31" />
+              <input placeholder='Year - 2020' type="number" id="year" min="1990" max="2021" />
+            </div>
             <button onClick={e => this.submit(e)}>Submit</button>
           </form>
         </div>

@@ -126,3 +126,18 @@ code {
 #sub-create-friend > button:hover, #sub-create-person > button:hover {
   border-color: rgba(255,255,255,1);
 }
+
+#birthdate-div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#birthdate-div > * {
+  width: 40%;
+  margin: 0;
+}
+
+#birthdate-div > #day {
+  margin: 0 2% 0 2%;
+}
