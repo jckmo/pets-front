@@ -20,7 +20,6 @@ code {
 }
 
 #footer {
-  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -34,7 +33,7 @@ code {
 }
 
 #header {
-  position: relative;
+  // position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -49,7 +48,7 @@ code {
 
 #sub-header-left {
   display: flex;
-  width: 30%;
+  width: 45%;
   justify-content: space-evenly;
   color: $charcoal;
 }
@@ -69,9 +68,11 @@ code {
 #create-friend, #create-person {
   position: absolute;
   top: 15%;
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 7%;;
 }
 
 #sub-create-friend, #sub-create-person {
@@ -140,4 +141,14 @@ code {
 
 #birthdate-div > #day {
   margin: 0 2% 0 2%;
+}
+
+#header-link:hover {
+  cursor: pointer;
+  color: $raisinblack
+}
+
+#home {
+  position: absolute;
+  top: 7%
 }

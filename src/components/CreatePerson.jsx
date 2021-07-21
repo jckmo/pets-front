@@ -55,6 +55,7 @@ class CreatePerson extends React.Component {
             <button onClick={(e) => this.submit(e)}>Submit</button>
           </form>
         </div>
+        <p>Already have an account? Login here.</p>
       </div>
 
     )

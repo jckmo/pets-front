@@ -5,9 +5,10 @@ class Header extends React.Component {
     return (
       <div id='header'>
         <div id='sub-header-left'>
-          <p>Home</p>
-          <p>About</p>
-          <p>Our Services</p>
+          <p id='header-link' onClick={() => this.props.history.push('/home')}>Home</p>
+          <p id='header-link' onClick={() => this.props.history.push('/about')}>About</p>
+          <p id='header-link' onClick={() => this.props.history.push('/services')}>Our Services</p>
+          <p id='header-link' onClick={() => this.props.history.push('/create-person')}>Join Us</p>
         </div>
         <div id='sub-header-right'>
           <p>Dude, Where's My Pet?</p>
